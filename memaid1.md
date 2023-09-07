@@ -15,7 +15,7 @@ flowchart LR
     F:::choice
     G(Check package<br>updates/changes)
     I(Deploy in NP)
-    H(PD Environment?)
+    H(Create CR for <br> PD Environment)
     J{CAB approval <br> for PD}
     J:::choice
     K(Deploy in PD)
