@@ -35,11 +35,11 @@ flowchart LR
         G ---> B
     end
     subgraph Deployment
+        I --> H
         H --YES--> J
         J --> K
         J --Rejected--> H
         K --> End
-        I --> H
     end
         F --Pass confirmation <br> or 1 week elapsed <br> with no feedback--> I
 
