@@ -39,7 +39,7 @@ flowchart LR
         J --> K
         J --Rejected--> H
         K --> End
-        I --> End
+        I --> H
     end
         F --Pass confirmation <br> or 1 week elapsed <br> with no feedback--> I
 
