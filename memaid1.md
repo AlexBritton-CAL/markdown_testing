@@ -1,3 +1,7 @@
+### STEP 7: Notify PD has been updated
+
+Once PD has had its exclude from latest removed, notify the Hub and Spoke Steering Channel Group again that the new image is now in PD and they will need to go through the process of rebuilding their runners to pick up the new image
+
 ```mermaid
 
 flowchart LR
