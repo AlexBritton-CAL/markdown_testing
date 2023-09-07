@@ -14,8 +14,8 @@ flowchart LR
     F{"Decision<Br>(Devops/Eng)<br>Wait 1 week<br>for feedback"}
     F:::choice
     G(Check package<br>updates/changes)
-    H(PD Environment?)
     I(Deploy in NP)
+    H(PD Environment?)
     J{CAB approval <br> for PD}
     J:::choice
     K(Deploy in PD)
