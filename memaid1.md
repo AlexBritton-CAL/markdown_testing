@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     A([Automated YT ticket<br>created to update runner])
     A:::firstLast
@@ -33,4 +34,4 @@ flowchart LR
     J --Rejected--> H
     K --> End
     I --> End
-
+```
