@@ -1,4 +1,5 @@
 ```mermaid
+
 flowchart LR
     A([Automated YT ticket<br>created to update runner])
     A:::firstLast
@@ -20,18 +21,23 @@ flowchart LR
     classDef firstLast fill:#f26,color:black
     classDef choice fill:#f82,color:black
 
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --FAIL--> G
-    G --- B
-    F --Pass confirmation <br> or 1 week elapsed <br> with no feedback--> H
-    H --No--> I
-    H --YES--> J
-    J --> K
-    J --Rejected--> H
-    K --> End
-    I --> End
+    subgraph Testing
+        A --> B
+        B --> C
+        C --> D
+        D --> E
+        E --> F
+        F --FAIL--> G
+        G ---> B
+    end
+    subgraph Deployment
+        H --No--> I
+        H --YES--> J
+        J --> K
+        J --Rejected--> H
+        K --> End
+        I --> End
+    end
+        F --Pass confirmation <br> or 1 week elapsed <br> with no feedback--> H
+
 ```
